@@ -1,8 +1,8 @@
-
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = "8266819825:AAGAD9pJCBxf5wF6aD_E9azZjWsJmNmSvEw"
+BOT_TOKEN = os.environ.get("8266819825:AAGAD9pJCBxf5wF6aD_E9azZjWsJmNmSvEw") 
 
 waiting_users = []
 active_chats = {}
